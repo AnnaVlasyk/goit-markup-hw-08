@@ -1,0 +1,23 @@
+.logo {
+    color: var(--logo-text-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &:hover {
+    color: var(--logo-text-color);
+        }
+}
+
+.logo-hat {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.logo-text {
+    color: var(--logo-black-color);
+}
+

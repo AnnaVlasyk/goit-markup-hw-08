@@ -1,0 +1,44 @@
+.auth-nav {
+    align-items: baseline;
+    margin-left: auto;
+    gap: 30px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--paragraph-text-color); 
+    
+    &__link {
+        color: var(--paragraph-text-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            color: var(--logo-text-color);
+        }
+    }
+}
+
+.link-email:hover .box-email,
+.link-email:focus .box-email {
+    stroke: var(--background-blue);
+    stroke-width: 5px;
+}
+
+.link-phone:hover .box-phone,
+.link-phone:focus .box-phone {
+    stroke: var(--background-blue);
+    stroke-width: 5px;
+
+}
+
+.box-email,
+.box-phone {
+    align-items: center;
+    margin-right: 10px;
+    stroke: var(--paragraph-text-color);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
