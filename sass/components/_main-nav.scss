@@ -1,4 +1,10 @@
 .main-nav {
     display: flex;
     align-items: baseline;
+    position: relative;
+
+    @media screen and (max-with: 767px) {
+        flex-grow: 1;
+        
+    }
 }

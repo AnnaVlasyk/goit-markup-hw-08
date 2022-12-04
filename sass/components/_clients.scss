@@ -1,7 +1,12 @@
 .clients {
     background-color: var(--background-white);
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title {
         margin-bottom: 50px;
@@ -13,6 +18,8 @@
     }
 
     &__box {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
     }
@@ -27,7 +34,7 @@
 }
 
 .clients-link {
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -44,6 +51,14 @@
     &:hover,
     &:focus {
         border: 1px solid rgba(33, 150, 243, 1);
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
     }
 
 }

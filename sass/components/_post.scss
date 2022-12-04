@@ -47,6 +47,17 @@
                                                                 
     }
 
+    .post-list {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+        
+    }
+
 }
 
 

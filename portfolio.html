@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,6 +49,11 @@
             </a>
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/sprite.svg#menu_40px"></use>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -79,7 +84,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project1.jpg" class="portfolio-photo" alt="Проект1" width="370" />
+                <img src="./images/Project1.jpg" class="portfolio-photo" alt="Проект1" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -97,7 +102,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project2.jpg" class="portfolio-photo" alt="Проект2" width="370" />
+                <img src="./images/Project2.jpg" class="portfolio-photo" alt="Проект2" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -115,7 +120,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project3.jpg" class="portfolio-photo" alt="Проект3" width="370" />
+                <img src="./images/Project3.jpg" class="portfolio-photo" alt="Проект3" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -134,7 +139,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project4.jpg" class="portfolio-photo" alt="Проект4" width="370" />
+                <img src="./images/Project4.jpg" class="portfolio-photo" alt="Проект4" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -153,7 +158,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project5.jpg" class="portfolio-photo" alt="Проект5" width="370" />
+                <img src="./images/Project5.jpg" class="portfolio-photo" alt="Проект5" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -172,7 +177,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project6.jpg" class="portfolio-photo" alt="Проект6" width="370" />
+                <img src="./images/Project6.jpg" class="portfolio-photo" alt="Проект6" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -191,7 +196,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project7.jpg" class="portfolio-photo" alt="Проект7" width="370" />
+                <img src="./images/Project7.jpg" class="portfolio-photo" alt="Проект7" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -210,7 +215,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project8.jpg" class="portfolio-photo" alt="Проект8" width="370" />
+                <img src="./images/Project8.jpg" class="portfolio-photo" alt="Проект8" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -229,7 +234,7 @@
           <li class="flex-element__item">
             <a href="">
               <div class="item-thumb">
-                <img src="./images/Project9.jpg" class="portfolio-photo" alt="Проект9" width="370" />
+                <img src="./images/Project9.jpg" class="portfolio-photo" alt="Проект9" />
                 <div class="item-overlay">
                   <p class="item-overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -311,6 +316,37 @@
       </div>
     </div>
   </footer>
+  <!--Menu-->
+  <div class="menu-container js-menu-container is-open" id="mobile-menu">
+    <button class="menu-toggle menu-button-close js-close-menu">
+      <svg class="icon-close" width="40" height="40">
+        <use href="./images/sprite.svg#close_40px"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu menu-navigation">
+      <li class="mobile-menu-list"><a href="./index.html" class="link mobile-menu-link">Студія</a></li>
+      <li class="mobile-menu-list"><a href="./portfolio.html" class="link mobile-menu-link current">Портфоліо</a></li>
+      <li class="mobile-menu-list"><a href="" class="link mobile-menu-link">Контакти</a></li>
+    </ul>
+
+    <ul class="mobile-menu menu-contacts">
+      <li class="mobile-menu-contacts"><a href="tel:0961111111" class="link menu-tel">+38 096 111 11 11</a></li>
+      <li class="email-menu-contacts"><a href="mailto:h@devstudio.com" class="link menu-email">info@devstudio.com</a>
+      </li>
+
+    </ul>
+
+    <ul class="mobile-menu menu-socials">
+      <li class="mobile-socials-link"><a href="" class="menu-socials-link link">Instagram</a></li>
+      <li class="mobile-socials-link"><a href="" class="menu-socials-link link">Twitter</a></li>
+      <li class="mobile-socials-link"><a href="" class="menu-socials-link link">Facebook</a></li>
+      <li class="mobile-socials-link"><a href="" class="menu-socials-link link">LinkedIn</a></li>
+    </ul>
+  </div>
+  </div>
+  <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
