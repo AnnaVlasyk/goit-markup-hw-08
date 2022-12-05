@@ -5,12 +5,12 @@
     padding-bottom: 60px;
 
     &__box {
+       text-align: center;
+        align-items: center;
+        justify-content: center;
         
        @media screen and (min-width: 480px) and (max-width: 767px){
-            width: 450px;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
+            width: 450px;   
         }
 
         @media screen and (min-width: 768px) and (max-width: 1199px){
@@ -24,17 +24,21 @@
         @media screen and (min-width: 1200px) {
             display: flex;
             width: 1200px;
+            align-items: stretch;
         }
         
     }
 
     &__form-basement {
-       width: 450px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
 
        @media screen and (min-width: 1200px) {
         display: block;
         width: 570px;
         margin-left: auto;
+        text-align: start;
        }
         
     }
@@ -51,18 +55,19 @@
     }
     
     &__footer-form {
-
+    
         @media screen and (min-width: 1200px) {
             display: flex;
             gap: 12px;
             margin-top: 20px;
+            min-width: 570px;
         }
     }
     
     &__footer-form-field {
         margin-bottom: 20px;
         background-color: transparent;
-        width: 100%;
+        max-width: 450px;
         border: none;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -73,6 +78,10 @@
     
         &:focus {
             outline: 1px solid #2196F3;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
+            min-width: 450px;
         }
 
         @media screen and (min-width: 1200px) {
@@ -102,11 +111,7 @@
 }
 
 .link {
-    /*color: var(--primary-white-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;*/
+
     font-style: normal;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -118,9 +123,12 @@
 
 .basement-address {
     margin-bottom: 60px;
-    
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-right: auto;
+        margin-right: 76px;
         text-align: center;
         align-items: center;
         justify-content: center;
@@ -128,6 +136,7 @@
     
     @media screen and (min-width: 1200px) {
         margin-right: 70px;
+        text-align: start;
     }
 }
 
@@ -148,6 +157,11 @@
      font-style: normal;
      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1,14;
+    letter-spacing: 0.03em;
+
      &:hover,
      &:focus {
          color: var(--logo-text-color);
@@ -161,9 +175,17 @@
 .social-basement {
     display: inline-block;
     margin-bottom: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-left: auto;
+        margin-left: 89px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
     }
 
     &__title {
